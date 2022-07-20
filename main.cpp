@@ -8,18 +8,31 @@
 #include "includes/input.hpp"
 using namespace std;
 
+
 /*
 Simple terminal UNO game
 by: Jensen Holm 2022
 */
 
-// In the future we should add some spicy uno rules
 
 int main() {
 
   // game play variables determined by user input
   int num_cpus = user_num_cpus();
   int cards_per_player = user_cards_per_player(num_cpus);
+
+  // initialize player objects
+
+
+  // set the deck
+
+
+  // deal cards
+
+
+  // begin game
+
+
 
   
 }

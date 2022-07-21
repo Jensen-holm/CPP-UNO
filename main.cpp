@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "includes/cpu.hpp"
-#include "includes/user.hpp"
+#include "includes/players.hpp"
 #include "includes/deck.hpp"
 #include "includes/game_functions.hpp"
 #include "includes/input.hpp"
@@ -21,7 +20,7 @@ int main() {
   int num_cpus = user_num_cpus();
   int cards_per_player = user_cards_per_player(num_cpus);
 
-  // initialize player objects
+  // create a list of CPU objects and put the user player into it as well (shuffle it for random order)
 
 
   // set the deck

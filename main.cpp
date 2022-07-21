@@ -20,7 +20,7 @@ int main() {
   int num_cpus = user_num_cpus();
   int cards_per_player = user_cards_per_player(num_cpus);
 
-  // create a list of CPU objects and put the user player into it as well (shuffle it for random order)
+  // create a vector of CPU objects and put the user player into it as well (shuffle it for random order)
 
 
   // set the deck

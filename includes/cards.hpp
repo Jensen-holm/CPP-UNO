@@ -1,9 +1,14 @@
 #include <string>
+using  namespace std;
 
 class Card {
 
-public: // need to create a good constructor
-  
+public:
+  // constructor
+  Card(string col, int val) {
+  string color = col;
+  int value = val;
+  }
 
 };
 

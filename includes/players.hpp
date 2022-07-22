@@ -9,22 +9,49 @@ using namespace std;
 class Player {
 
 public:
-  vector <Card> Cards;
+  // vector of cards the player is delt
 
 };
 
 
 class User: public Player {
 
+private:
+  string type = "User";
+
 public:
-  string type = 'User';
+  
+  User() {
+    string name = set_name();
+  }
+  
+  string set_name() {
+    string new_name;
+    cout << "\nEnter Name: ";
+    cin >> new_name;
+    return new_name;
+  }
+
+  string get_type() {
+    return type;
+  }
 
 };
 
 
 class CPU: public Player {
 
+private:
+  string type = "CPU";
+
 public:
-  string type = 'CPU';
+
+  CPU(int cpu_number_id) {
+    string cpu_id = "CPU #" + to_string(cpu_number_id);
+  }
+
+  string get_type() {
+    return type;
+  }
 
 };

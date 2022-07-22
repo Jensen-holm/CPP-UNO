@@ -2,7 +2,6 @@
 #include <vector>
 #include <string>
 #include "includes/players.hpp"
-#include "includes/deck.hpp"
 #include "includes/game_functions.hpp"
 #include "includes/input.hpp"
 using namespace std;
@@ -26,7 +25,9 @@ int main()
 
   // create a vector of CPU objects and put the user player into it as well (shuffle it for random order)
   vector <Player> player_vector;
+
   player_vector.push_back(player1);
+
   for (int i = 0; i < num_cpus; i++) 
   {
     CPU computer(i);
@@ -34,9 +35,13 @@ int main()
   }
 
   // set the deck
-
+  Deck deck_of_cards;
+  vector <Card> deck = deck_of_cards.get_deck();
 
   // deal cards
+
+
+  // print users cards
 
 
   // begin game

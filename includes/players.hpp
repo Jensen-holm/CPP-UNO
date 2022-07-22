@@ -6,7 +6,8 @@ using namespace std;
 
 // create both user and CPU players as subclasses of the main Player class
 
-class Player {
+class Player 
+{
 
 public:
   // vector of cards the player is delt
@@ -14,43 +15,51 @@ public:
 };
 
 
-class User: public Player {
+class User: public Player 
+{
 
 private:
   string type = "User";
-
-public:
   
-  User() {
-    string name = set_name();
-  }
-  
-  string set_name() {
+  string set_name() 
+  {
     string new_name;
     cout << "\nEnter Name: ";
     cin >> new_name;
     return new_name;
   }
 
-  string get_type() {
+public:
+  
+  User() 
+  {
+    string name = set_name();
+  }
+
+  string get_type() 
+  {
     return type;
   }
 
 };
 
 
-class CPU: public Player {
+class CPU: public Player 
+{
 
 private:
   string type = "CPU";
 
 public:
 
-  CPU(int cpu_number_id) {
+  // in future instead of bland number ID we could randomly select a name from a list of names
+  CPU(int cpu_number_id) 
+  {
     string cpu_id = "CPU #" + to_string(cpu_number_id);
   }
 
-  string get_type() {
+  string get_type() 
+  {
     return type;
   }
 
